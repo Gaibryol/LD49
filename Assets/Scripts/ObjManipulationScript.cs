@@ -20,7 +20,7 @@ public class ObjManipulationScript : MonoBehaviour
     void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Debug.Log(selected);
+        // Debug.Log(selected);
         if (selected)
         {
             foreach (GameObject obj in objects)

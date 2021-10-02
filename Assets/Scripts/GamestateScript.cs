@@ -23,6 +23,9 @@ public class GamestateScript : MonoBehaviour
     // Function to handle events when play button is pressed
     public void PressPlayButton()
     {
+        GameObject.FindGameObjectWithTag("Graph").GetComponent<GraphComponent>().printEdges();
+        Debug.Log("---------------");
+        GameObject.FindGameObjectWithTag("Graph").GetComponent<GraphComponent>().CalculateWeights();
         playButton.interactable = false;
         inGame = true;
     }
