@@ -22,8 +22,21 @@ public class GirlHitScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Object")
         {
-            GamestateScript.inGame = false;
-            eScript.StopShake();
+            float kinEnergy = KineticEnergy(collision);
+            Debug.Log(kinEnergy);
+
+            if (kinEnergy >= 20f)
+            {
+                Debug.Log("Hit by: " + collision.gameObject + " w/ " + kinEnergy + "J");
+                GamestateScript.inGame = false;
+                eScript.StopShake();
+            }
         }
+    }
+
+    private float KineticEnergy(Collision2D collision)
+    {
+        Rigidbody2D colRBody = collision.gameObject.GetComponent<Rigidbody2D>();
+        return 0.5f * colRBody.mass * collision.relativeVelocity.sqrMagnitude;
     }
 }
