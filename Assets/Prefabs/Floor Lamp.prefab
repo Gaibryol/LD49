@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 400406465846972099}
   - component: {fileID: 400406465846972101}
   - component: {fileID: 400406465846972100}
+  - component: {fileID: -6862419183622866506}
+  - component: {fileID: -1227233204071957982}
   m_Layer: 0
   m_Name: Floor Lamp
   m_TagString: Object
@@ -300,3 +302,33 @@ PolygonCollider2D:
       - {x: 0.06, y: -3.86}
       - {x: 0.08, y: -3.9599998}
       - {x: 0.099999994, y: -3.97}
+--- !u!114 &-6862419183622866506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400406465846972096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []
+--- !u!114 &-1227233204071957982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400406465846972096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1

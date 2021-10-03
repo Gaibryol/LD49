@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4853857433428208530}
   - component: {fileID: 4853857433428208532}
   - component: {fileID: 4853857433428208533}
+  - component: {fileID: 8468337597146618946}
+  - component: {fileID: 7863586832700354035}
   m_Layer: 0
   m_Name: PC Tower
   m_TagString: Object
@@ -150,3 +152,33 @@ PolygonCollider2D:
       - {x: -0.66999996, y: -1.5749999}
       - {x: -0.65, y: -1.5949999}
       - {x: 0.14, y: -1.5949999}
+--- !u!114 &8468337597146618946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853857433428208529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []
+--- !u!114 &7863586832700354035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853857433428208529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1

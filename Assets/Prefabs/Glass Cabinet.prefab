@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 681326559138337136}
   - component: {fileID: 681326559138337142}
   - component: {fileID: 681326559138337143}
+  - component: {fileID: 159356780966635438}
+  - component: {fileID: 1033509568617041113}
   m_Layer: 0
   m_Name: Glass Cabinet
   m_TagString: Object
@@ -196,3 +198,33 @@ PolygonCollider2D:
       - {x: -1.4499999, y: -4.89}
       - {x: -1.41, y: -4.8599997}
       - {x: -1.41, y: -4.22}
+--- !u!114 &159356780966635438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681326559138337139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []
+--- !u!114 &1033509568617041113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681326559138337139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1

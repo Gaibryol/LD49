@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4533889706416650552}
   - component: {fileID: 4533889706416650558}
   - component: {fileID: 4533889706416650559}
+  - component: {fileID: 3700376107998813144}
+  - component: {fileID: -1117678261544364954}
   m_Layer: 0
   m_Name: Teddy Bear
   m_TagString: Object
@@ -314,3 +316,33 @@ PolygonCollider2D:
       - {x: -1.55, y: -3.165}
       - {x: -1.4699999, y: -3.175}
       - {x: -1.4499999, y: -3.175}
+--- !u!114 &3700376107998813144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533889706416650555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []
+--- !u!114 &-1117678261544364954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533889706416650555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1

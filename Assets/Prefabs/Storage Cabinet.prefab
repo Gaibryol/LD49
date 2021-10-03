@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4501727096095593756}
   - component: {fileID: 4501727096095593754}
   - component: {fileID: 4501727096095593755}
+  - component: {fileID: -2311442298437738946}
+  - component: {fileID: -4710951976410908958}
   m_Layer: 0
   m_Name: Storage Cabinet
   m_TagString: Object
@@ -166,3 +168,33 @@ PolygonCollider2D:
       - {x: -3.135, y: -1.03}
       - {x: -3.135, y: -1.13}
       - {x: -3.095, y: -1.16}
+--- !u!114 &-2311442298437738946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501727096095593759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []
+--- !u!114 &-4710951976410908958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501727096095593759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1

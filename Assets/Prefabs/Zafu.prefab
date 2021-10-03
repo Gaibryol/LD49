@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4180312000521640809}
   - component: {fileID: 4180312000521640815}
   - component: {fileID: 4180312000521640814}
+  - component: {fileID: 8779912705179026949}
+  - component: {fileID: 2573289658784549230}
   m_Layer: 0
   m_Name: Zafu
   m_TagString: Object
@@ -189,3 +191,33 @@ PolygonCollider2D:
       - {x: -1.31, y: -0.85999995}
       - {x: -1.22, y: -0.9}
       - {x: -1.04, y: -0.96}
+--- !u!114 &8779912705179026949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180312000521640810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []
+--- !u!114 &2573289658784549230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180312000521640810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1
