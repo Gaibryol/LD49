@@ -306,6 +306,7 @@ GameObject:
   - component: {fileID: 3538541359314338832}
   - component: {fileID: 3538541359314338838}
   - component: {fileID: 3538541359314338839}
+  - component: {fileID: 9047828033186326009}
   m_Layer: 0
   m_Name: File Cabinet
   m_TagString: Object
