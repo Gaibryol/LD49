@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5916534259683474002}
   - component: {fileID: 3420320854569005188}
   - component: {fileID: 528926592324382496}
+  - component: {fileID: 9057438872176633855}
   m_Layer: 0
-  m_Name: Box
-  m_TagString: Untagged
+  m_Name: Celing Block
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,3 +133,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.06, y: 1.08}
   m_EdgeRadius: 0
+--- !u!114 &9057438872176633855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5916534259683474004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 3
+  rigidity: 1
+  current_stress: 0
+  adj: []
+  parent: []

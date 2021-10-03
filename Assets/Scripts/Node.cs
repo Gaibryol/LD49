@@ -15,8 +15,14 @@ public class Node : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mass = GetComponent<Rigidbody2D>().mass;
-        rigidity = mass * 2.5f;
+        if (mass == 0)
+        {
+            mass = GetComponent<Rigidbody2D>().mass;
+        }
+        if (rigidity == 0)
+        {
+            rigidity = mass * 2.5f;
+        }
         adj = new List<Node>();
         first = true;
         graph = GameObject.FindGameObjectWithTag("Graph").GetComponent<GraphComponent>();
@@ -30,8 +36,14 @@ public class Node : MonoBehaviour
             graph.AddNode(this);
             first = !first;
         }
-
-        if (graph.FindIndex(this) > -1 && graph.graph.Forces[graph.FindIndex(this)] > rigidity)
+        if (graph.FindIndex(this) > -1)
+        {
+            current_stress = graph.graph.Forces[graph.FindIndex(this)];
+        } else
+        {
+            current_stress = 0;
+        }
+        if (current_stress > rigidity)
         {
             Debug.Log(this + " Break");
             gameObject.GetComponent<SpriteRenderer>().color = Color.red;
@@ -40,7 +52,7 @@ public class Node : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         }
 
-        if (GamestateScript.inGame && graph.graph.Forces[graph.FindIndex(this)] > rigidity)
+        if (GamestateScript.inGame && current_stress > rigidity)
         {
             graph.RemoveNode(this);
             Destroy(this.gameObject);

@@ -111,7 +111,8 @@ public class Graph
             //sb.AppendLine();
         }
         //Debug.Log(sb.ToString());
-        Forces = sum;
+        Forces = new float[99];
+        sum.CopyTo(Forces, 0);
     }
 
     public void BFS()
