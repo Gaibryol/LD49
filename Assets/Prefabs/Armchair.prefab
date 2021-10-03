@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8727327023803471932}
   - component: {fileID: 8727327023803471933}
   - component: {fileID: 2634703036023972321}
+  - component: {fileID: -5769132080799070321}
   m_Layer: 0
   m_Name: Armchair
   m_TagString: Object
@@ -237,3 +238,16 @@ MonoBehaviour:
   current_stress: 0
   adj: []
   parent: []
+--- !u!114 &-5769132080799070321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8727327023803471929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1

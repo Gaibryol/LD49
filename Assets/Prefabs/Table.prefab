@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2000865491537289751}
   - component: {fileID: 2000865491537289750}
   - component: {fileID: 4756784871500079547}
+  - component: {fileID: -2134178054204778360}
   m_Layer: 0
   m_Name: Table
   m_TagString: Object
@@ -228,3 +229,16 @@ MonoBehaviour:
   current_stress: 0
   adj: []
   parent: []
+--- !u!114 &-2134178054204778360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000865491537289746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1

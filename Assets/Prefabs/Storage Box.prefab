@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8028576833606913862}
   - component: {fileID: 8028576833606913863}
   - component: {fileID: -1222969321529885436}
+  - component: {fileID: 2194206803983183719}
   m_Layer: 0
   m_Name: Storage Box
   m_TagString: Object
@@ -163,3 +164,16 @@ MonoBehaviour:
   current_stress: 0
   adj: []
   parent: []
+--- !u!114 &2194206803983183719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8028576833606913859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1
