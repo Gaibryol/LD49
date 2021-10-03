@@ -48,7 +48,7 @@ public class ObjManipulationScript : MonoBehaviour
             Collider2D obj = Physics2D.OverlapPoint(mousePos);
 
             // If object was found
-            if (obj)
+            if (obj && obj.GetComponent<Selectable>().selectable)
             {
                 // Make clicked on object selected and calculate offset
                 selected = obj.transform.gameObject;
