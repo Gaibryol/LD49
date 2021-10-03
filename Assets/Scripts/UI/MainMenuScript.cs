@@ -5,17 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
-    
+    public GameObject mainPanel;
+    public GameObject levelPanel;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        mainPanel.SetActive(true);
+        levelPanel.SetActive(false);
     }
 
     public void StartGame()
@@ -31,5 +28,22 @@ public class MainMenuScript : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void OpenLevelPanel()
+    {
+        mainPanel.SetActive(false);
+        levelPanel.SetActive(true);
+    }
+
+    public void CloseLevelPanel()
+    {
+        mainPanel.SetActive(true);
+        levelPanel.SetActive(false);
+    }
+
+    public void LoadLevel(int num)
+    {
+        SceneManager.LoadScene(num);
     }
 }
