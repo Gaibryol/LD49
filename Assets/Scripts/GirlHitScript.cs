@@ -23,7 +23,6 @@ public class GirlHitScript : MonoBehaviour
         if (collision.gameObject.tag == "Object")
         {
             float kinEnergy = KineticEnergy(collision);
-            Debug.Log(kinEnergy);
 
             if (kinEnergy >= 20f)
             {

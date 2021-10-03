@@ -30,6 +30,7 @@ public class Node : MonoBehaviour
             graph.AddNode(this);
             first = !first;
         }
+
         if (graph.FindIndex(this) > -1 && graph.graph.Forces[graph.FindIndex(this)] > rigidity)
         {
             Debug.Log(this + " Break");

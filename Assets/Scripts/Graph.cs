@@ -11,6 +11,7 @@ public class Graph
     {
         Nodes = new List<Node>();
         Edges = new List<Edge>();
+        Forces = new float[99];
     }
 
     public List<Node> Nodes { get; private set; }
