@@ -11,8 +11,12 @@ public class MainMenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mainPanel.SetActive(true);
-        levelPanel.SetActive(false);
+        if (SceneManager.GetActiveScene().name == "Main Menu")
+        {
+            mainPanel.SetActive(true);
+            levelPanel.SetActive(false);
+        }
+        
     }
 
     public void StartGame()

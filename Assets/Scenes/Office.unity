@@ -208,9 +208,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5916534259894270695}
-  - {fileID: 479974844}
-  - {fileID: 1437224885}
-  - {fileID: 1078201989}
   m_Father: {fileID: 1014982446}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -332,6 +329,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1d1d70ed30e244aa9ec5ba39c8f7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainPanel: {fileID: 0}
+  levelPanel: {fileID: 0}
 --- !u!114 &333718161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,11 +478,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479974843}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1006, y: -0.641, z: 0}
-  m_LocalScale: {x: 56.411182, y: 26.160288, z: 1}
+  m_LocalPosition: {x: 0.050133787, y: 4.9246807, z: 0}
+  m_LocalScale: {x: 35.935276, y: 15.014051, z: 1}
   m_Children: []
-  m_Father: {fileID: 228026089}
-  m_RootOrder: 1
+  m_Father: {fileID: 5916534259894270695}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &479974845
 SpriteRenderer:
@@ -1139,11 +1138,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078201988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.48, y: -1.18, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.210156, y: 4.615335, z: 0}
+  m_LocalScale: {x: 0.637024, y: 0.5739253, z: 1}
   m_Children: []
-  m_Father: {fileID: 228026089}
-  m_RootOrder: 3
+  m_Father: {fileID: 5916534259894270695}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1078201990
 SpriteRenderer:
@@ -1506,7 +1505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bef0be5234aad64aa280898fedfc9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButton: {fileID: 0}
+  playButton: {fileID: 1685044606}
 --- !u!1 &1437224884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,11 +1531,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437224884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.77, y: 2.14, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.1414833, y: 6.520767, z: 0}
+  m_LocalScale: {x: 0.637024, y: 0.5739253, z: 1}
   m_Children: []
-  m_Father: {fileID: 228026089}
-  m_RootOrder: 2
+  m_Father: {fileID: 5916534259894270695}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1437224886
 SpriteRenderer:
@@ -1688,7 +1687,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1408284278}
         m_TargetAssemblyTypeName: GamestateScript, Assembly-CSharp
         m_MethodName: PressPlayButton
         m_Mode: 1
@@ -1700,7 +1699,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1959384655}
         m_TargetAssemblyTypeName: EarthquakeScript, Assembly-CSharp
         m_MethodName: StartShake
         m_Mode: 1
