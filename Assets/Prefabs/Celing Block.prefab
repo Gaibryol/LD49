@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mass: 3
-  rigidity: 1
+  rigidity: 5
   current_stress: 0
   adj: []
   parent: []
