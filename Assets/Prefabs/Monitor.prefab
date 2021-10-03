@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8163543029647045117}
   - component: {fileID: 8163543029647045115}
   - component: {fileID: 8163543029647045114}
+  - component: {fileID: 2706270639934784931}
+  - component: {fileID: 7935284700337387889}
   m_Layer: 0
   m_Name: Monitor
   m_TagString: Object
@@ -212,3 +214,33 @@ PolygonCollider2D:
       - {x: 0.895, y: -1.275}
       - {x: 0.92499995, y: -1.235}
       - {x: 0.92499995, y: -1.225}
+--- !u!114 &2706270639934784931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8163543029647045118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []
+--- !u!114 &7935284700337387889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8163543029647045118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1

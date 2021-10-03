@@ -306,6 +306,8 @@ GameObject:
   - component: {fileID: 7516725483109716008}
   - component: {fileID: 7516725483109716014}
   - component: {fileID: 7516725483109716015}
+  - component: {fileID: -3491323470664755062}
+  - component: {fileID: 5260352109240460111}
   m_Layer: 0
   m_Name: Kitchen Cabinet
   m_TagString: Object
@@ -702,3 +704,33 @@ PolygonCollider2D:
       - {x: 0.705, y: 2.08}
       - {x: 0.695, y: 2.07}
       - {x: 0.685, y: 2.08}
+--- !u!114 &-3491323470664755062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7516725483109716011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []
+--- !u!114 &5260352109240460111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7516725483109716011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1

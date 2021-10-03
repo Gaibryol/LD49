@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8972589971974140823}
   - component: {fileID: 8972589971974140817}
   - component: {fileID: 8972589971974140816}
+  - component: {fileID: 3860602652672363957}
+  - component: {fileID: 9067519697692614990}
   m_Layer: 0
   m_Name: Turkey
   m_TagString: Object
@@ -171,3 +173,33 @@ PolygonCollider2D:
       - {x: -0.965, y: -0.51}
       - {x: -0.755, y: -0.59}
       - {x: 0.675, y: -0.59}
+--- !u!114 &3860602652672363957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972589971974140820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []
+--- !u!114 &9067519697692614990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972589971974140820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1

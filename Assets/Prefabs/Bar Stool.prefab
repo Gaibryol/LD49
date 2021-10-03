@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6474095294398233020}
   - component: {fileID: 6474095294398233018}
   - component: {fileID: 6474095294398233019}
+  - component: {fileID: -5506370123500249824}
+  - component: {fileID: -2605241424880708413}
   m_Layer: 0
   m_Name: Bar Stool
   m_TagString: Object
@@ -427,3 +429,33 @@ PolygonCollider2D:
       - {x: -0.26, y: -0.39}
       - {x: -0.28, y: -0.39999998}
       - {x: -0.52, y: -0.39999998}
+--- !u!114 &-5506370123500249824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474095294398233023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []
+--- !u!114 &-2605241424880708413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474095294398233023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcebe30e59e18d4c8cf93d747694022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectable: 1
