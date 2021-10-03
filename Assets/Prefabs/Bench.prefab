@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 821101502932973596}
   - component: {fileID: 821101502932973594}
   - component: {fileID: 821101502932973595}
+  - component: {fileID: 4856858561865345590}
   m_Layer: 0
   m_Name: Bench
   m_TagString: Object
@@ -264,3 +265,20 @@ PolygonCollider2D:
       - {x: -1.81, y: -0.13}
       - {x: -1.88, y: -0.14}
       - {x: -1.89, y: -0.13}
+--- !u!114 &4856858561865345590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821101502932973599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0
+  rigidity: 0
+  current_stress: 0
+  adj: []
+  parent: []

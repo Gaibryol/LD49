@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Object
   - Ground
+  - Graph
   layers:
   - Default
   - TransparentFX
