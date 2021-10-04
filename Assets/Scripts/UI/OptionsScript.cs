@@ -66,10 +66,10 @@ public class OptionsScript : MonoBehaviour
         PlayerPrefs.SetInt("Music", -1 * PlayerPrefs.GetInt("Music"));
         if (PlayerPrefs.GetInt("Music") == -1)
         {
-            FindObjectOfType<AudioManager>().Mute("Level Select", true);
+            FindObjectOfType<AudioManager>().Mute("Menu", true);
         } else
         {
-            FindObjectOfType<AudioManager>().Mute("Level Select", false);
+            FindObjectOfType<AudioManager>().Mute("Menu", false);
 
         }
     }
