@@ -319,12 +319,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
-  rigidity: 0
+  mass: 5
+  rigidity: 2000
   current_stress: 0
   adj: []
   parent: []
   canBeDestroyed: 0
+  Smoke: {fileID: 0}
 --- !u!114 &-7955687305662891135
 MonoBehaviour:
   m_ObjectHideFlags: 0

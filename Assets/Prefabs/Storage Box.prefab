@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1
+  m_Mass: 7.6456995
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -160,10 +160,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mass: 0
-  rigidity: 0
+  rigidity: 2000
   current_stress: 0
   adj: []
   parent: []
+  canBeDestroyed: 0
+  Smoke: {fileID: 0}
 --- !u!114 &2194206803983183719
 MonoBehaviour:
   m_ObjectHideFlags: 0

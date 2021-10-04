@@ -15,7 +15,14 @@ public class GirlHitScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GamestateScript.inGame)
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

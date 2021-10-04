@@ -119,11 +119,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 3
+  mass: 1
   rigidity: 5
   current_stress: 0
   adj: []
   parent: []
+  canBeDestroyed: 0
+  Smoke: {fileID: 0}
 --- !u!60 &1763869031093500671
 PolygonCollider2D:
   m_ObjectHideFlags: 0

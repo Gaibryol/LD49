@@ -38,7 +38,7 @@ public class EndPanelScript : MonoBehaviour
         }
         if (timer <= 0 && ended)
         {
-            mScript.MainMenu();
+            SceneManager.LoadScene(1);
         }
 
         if (ended)

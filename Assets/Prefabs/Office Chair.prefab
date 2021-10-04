@@ -321,11 +321,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mass: 0
-  rigidity: 0
+  rigidity: 2000
   current_stress: 0
   adj: []
   parent: []
   canBeDestroyed: 0
+  Smoke: {fileID: 0}
 --- !u!114 &-3571318856755691991
 MonoBehaviour:
   m_ObjectHideFlags: 0

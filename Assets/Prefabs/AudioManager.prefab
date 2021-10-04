@@ -175,7 +175,7 @@ MonoBehaviour:
   - isSFX: 0
     isMusic: 1
     name: Kitchen
-    clip: {fileID: 8300000, guid: 83cc9c4b8e1ccd44fb0462cfbb452090, type: 3}
+    clip: {fileID: 8300000, guid: f711ba0f09b7b5342ac0b92cdffe66e6, type: 3}
     volume: 1
     pitch: 1
     loop: 1
@@ -183,7 +183,7 @@ MonoBehaviour:
   - isSFX: 0
     isMusic: 1
     name: LivingRoom
-    clip: {fileID: 8300000, guid: 83cc9c4b8e1ccd44fb0462cfbb452090, type: 3}
+    clip: {fileID: 8300000, guid: e01b8a4248bba1a499c572e6a7aa641b, type: 3}
     volume: 1
     pitch: 1
     loop: 1
