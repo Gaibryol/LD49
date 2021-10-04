@@ -47,7 +47,7 @@ public class EndPanelScript : MonoBehaviour
                 panel.GetComponent<CanvasGroup>().alpha = 1;
                 return;
             }
-            panel.GetComponent<CanvasGroup>().alpha = fadeTimer / fadeTime;
+            panel.GetComponent<CanvasGroup>().alpha = 1 - (fadeTimer / fadeTime);
             fadeTimer -= Time.deltaTime;
         }
     }
