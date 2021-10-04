@@ -14,6 +14,7 @@ public class Node : MonoBehaviour
     private bool first;
     private bool destroyed;
     public bool canBeDestroyed;
+    public GameObject Smoke;
 
     private string[] ImpactSounds = new string[] { "Impact 1", "Impact 2", "Impact 3", "Impact 4", "Impact 5", "Impact 6" };
     // Start is called before the first frame update
@@ -31,6 +32,7 @@ public class Node : MonoBehaviour
         first = true;
         graph = GameObject.FindGameObjectWithTag("Graph").GetComponent<GraphComponent>();
         canBeDestroyed = false;
+        Smoke = (GameObject)Resources.Load("Smoke", typeof(GameObject));
     }
 
     // Update is called once per frame
@@ -66,7 +68,7 @@ public class Node : MonoBehaviour
             graph.RemoveNode(this);
             destroyed = true;
             parent.ForEach(n => Debug.Log(n));
-
+            Instantiate(Smoke, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(this.gameObject);
         }
     }
