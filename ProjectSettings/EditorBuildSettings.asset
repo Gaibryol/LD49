@@ -12,15 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Office.unity
     guid: 34a07b8ed61ec7741b0634ff9fdee8a8
   - enabled: 1
-    path: Assets/Scenes/Room.unity
+    path: Assets/Scenes/BedRoom.unity
     guid: 6a44c6f26c0dbab4c94b7e3dde54b015
   - enabled: 1
     path: Assets/Scenes/Kitchen.unity
     guid: 24df5bfa6d57f9e45a3bffed30bb352f
   - enabled: 1
-    path: Assets/Scenes/Living Room.unity
+    path: Assets/Scenes/LivingRoom.unity
     guid: 4c3f89b42c59d5b428dec8010512eb72
   - enabled: 1
-    path: Assets/Scenes/Mud Room.unity
+    path: Assets/Scenes/MudRoom.unity
     guid: 2138e854478232c468834bcd9bbcae27
   m_configObjects: {}

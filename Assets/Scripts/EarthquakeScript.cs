@@ -17,6 +17,8 @@ public class EarthquakeScript : MonoBehaviour
 
     private Rigidbody2D rbody;
 
+    public EndPanelScript eScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +83,15 @@ public class EarthquakeScript : MonoBehaviour
     public void StopShake()
     {
         shaking = false;
-        Debug.Log(numStars);
+        GamestateScript.inGame = false;
+        
+        if (numStars > 0)
+        {
+            eScript.Win(numStars);
+        }
+        else
+        {
+            eScript.Lose();
+        }
     }
 }
