@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
     public GameObject mainPanel;
+    public GameObject creditsPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -13,6 +14,7 @@ public class MainMenuScript : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Main Menu")
         {
             mainPanel.SetActive(true);
+            creditsPanel.SetActive(false);
             FindObjectOfType<AudioManager>().Play("Menu");
         }
         else if (SceneManager.GetActiveScene().name == "Level Select")
@@ -50,5 +52,18 @@ public class MainMenuScript : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Click");
 
         SceneManager.LoadScene(num);
+    }
+
+    public void OpenCreditPanel()
+    {
+        // Open Credits
+        mainPanel.SetActive(false);
+        creditsPanel.SetActive(true);
+    }
+
+    public void CloseCreditsPanel()
+    {
+        mainPanel.SetActive(true);
+        creditsPanel.SetActive(false);
     }
 }
