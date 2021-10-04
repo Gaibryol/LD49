@@ -12,6 +12,10 @@ public class Node : MonoBehaviour
     public List<Node> parent;
     private GraphComponent graph;
     private bool first;
+    private bool destroyed;
+    public bool canBeDestroyed;
+
+    private string[] ImpactSounds = new string[] { "Impact 1", "Impact 2", "Impact 3", "Impact 4", "Impact 5", "Impact 6" };
     // Start is called before the first frame update
     void Start()
     {
@@ -26,11 +30,16 @@ public class Node : MonoBehaviour
         adj = new List<Node>();
         first = true;
         graph = GameObject.FindGameObjectWithTag("Graph").GetComponent<GraphComponent>();
+        canBeDestroyed = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (destroyed)
+        {
+            return;
+        }
         if (first)
         {
             graph.AddNode(this);
@@ -43,20 +52,28 @@ public class Node : MonoBehaviour
         {
             current_stress = 0;
         }
-        if (current_stress > rigidity)
+        if (current_stress > rigidity && !gameObject.name.Contains("Celing"))
         {
-            Debug.Log(this + " Break");
+            // Debug.Log(this + " Break");
             gameObject.GetComponent<SpriteRenderer>().color = Color.red;
         } else
         {
             gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         }
 
-        if (GamestateScript.inGame && current_stress > rigidity)
+        if (GamestateScript.inGame && current_stress > rigidity && canBeDestroyed && !gameObject.name.Contains("Celing"))
         {
             graph.RemoveNode(this);
+            destroyed = true;
+            parent.ForEach(n => Debug.Log(n));
+
             Destroy(this.gameObject);
         }
+    }
+
+    private void OnBecameVisible()
+    {
+        canBeDestroyed = true;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -81,6 +98,18 @@ public class Node : MonoBehaviour
                 parent.Add(node);
             }
         }
+        if (GamestateScript.inGame && collision.gameObject.name.Contains("Celing"))
+        {
+            int i = Random.Range(0, ImpactSounds.Length);
+            FindObjectOfType<AudioManager>().Play(ImpactSounds[i]);
+        }
+        //if (!GamestateScript.inGame && (collision.gameObject.tag == "Object" || collision.gameObject.tag == "Ground"))
+        //{
+        //    Debug.Log(collision.gameObject.name);
+        //    Debug.Log(collision.otherCollider.name);
+        //    int i = Random.Range(0, ImpactSounds.Length);
+        //    FindObjectOfType<AudioManager>().Play(ImpactSounds[i]);
+        //}
     }
 
     private void OnCollisionExit2D(Collision2D collision)

@@ -22,6 +22,7 @@ public class CursorController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && isHover)
         {
             Cursor.SetCursor(holdTexture, Vector2.zero, CursorMode.Auto);
+            FindObjectOfType<AudioManager>().Play("Lift");
         } else if (Input.GetMouseButtonUp(0))
         {
             Cursor.SetCursor(defaultTexture, Vector2.zero, CursorMode.Auto);

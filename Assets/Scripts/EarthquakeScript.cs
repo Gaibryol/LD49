@@ -77,6 +77,7 @@ public class EarthquakeScript : MonoBehaviour
         timer = shakeTimer;
         shaking = true;
         numStars = 0;
+        FindObjectOfType<AudioManager>().Play("Earthquake");
     }
 
     // Function to stop shaking
@@ -86,5 +87,6 @@ public class EarthquakeScript : MonoBehaviour
         GamestateScript.inGame = false;
 
         eScript.ShowStars(numStars);
+        FindObjectOfType<AudioManager>().Stop("Earthquake");
     }
 }
