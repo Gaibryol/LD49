@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
     public GameObject mainPanel;
-    public GameObject levelPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +13,6 @@ public class MainMenuScript : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Main Menu")
         {
             mainPanel.SetActive(true);
-            levelPanel.SetActive(false);
         }
         
     }
@@ -36,14 +34,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void OpenLevelPanel()
     {
-        mainPanel.SetActive(false);
-        levelPanel.SetActive(true);
-    }
-
-    public void CloseLevelPanel()
-    {
-        mainPanel.SetActive(true);
-        levelPanel.SetActive(false);
+        SceneManager.LoadScene(1);
     }
 
     public void LoadLevel(int num)

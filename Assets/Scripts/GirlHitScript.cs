@@ -27,7 +27,6 @@ public class GirlHitScript : MonoBehaviour
             if (kinEnergy >= 20f)
             {
                 Debug.Log("Hit by: " + collision.gameObject + " w/ " + kinEnergy + "J");
-                GamestateScript.inGame = false;
                 eScript.StopShake();
             }
         }
