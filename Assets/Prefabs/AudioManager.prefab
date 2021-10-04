@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3646955219321881188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3646955219321881190}
+  - component: {fileID: 3646955219321881191}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3646955219321881190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3646955219321881188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.359856, y: 12.969248, z: -5.782642}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3646955219321881191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3646955219321881188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3199bac83df959047b485aede62a744c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Earthquake
+    clip: {fileID: 8300000, guid: be9250f1e9ec7f84fad7c7025e13934c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: f499cc40266171b40ac9ef6744037b17, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fail
+    clip: {fileID: 8300000, guid: 80bf1b0b2cd8ac146a40ad8c44c22dd3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Hit
+    clip: {fileID: 8300000, guid: d571d42351c7b914bbaf4df7a0a0a826, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Impact 1
+    clip: {fileID: 8300000, guid: 04769eb0959f59f459b3f2e94b27eaac, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Impact 2
+    clip: {fileID: 8300000, guid: 88782c8c44981cb409fc08bdfd3e04b9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Impact 3
+    clip: {fileID: 8300000, guid: 93a836a4b9c69764795cf78f825dbbd5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Impact 4
+    clip: {fileID: 8300000, guid: 6066df6e2051f304d9ae4bc12352a7c9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Impact 5
+    clip: {fileID: 8300000, guid: 0c154466818f5584586f5e70c5a5abc4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Impact 6
+    clip: {fileID: 8300000, guid: 784d1393f6ec83747affcb06f826463f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Break
+    clip: {fileID: 8300000, guid: 94819d2cf6ccae141ad16d455aa3bd65, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Lift
+    clip: {fileID: 8300000, guid: 3045769cd217ca44fbabf1b850bf85b8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Ceiling Break
+    clip: {fileID: 8300000, guid: 27beff7179df8914799faf926eee5507, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

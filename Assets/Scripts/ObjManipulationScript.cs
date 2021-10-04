@@ -34,6 +34,7 @@ public class ObjManipulationScript : MonoBehaviour
                 foreach (GameObject obj in objects)
                 {
                     obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+                    //obj.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
                 }
             }
             // If there isn't an object selected
@@ -43,6 +44,7 @@ public class ObjManipulationScript : MonoBehaviour
                 foreach (GameObject obj in objects)
                 {
                     obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                    //obj.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
                 }
             }
 

@@ -13,17 +13,24 @@ public class MainMenuScript : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Main Menu")
         {
             mainPanel.SetActive(true);
+            FindObjectOfType<AudioManager>().Play("Menu");
         }
-        
+        else if (SceneManager.GetActiveScene().name == "Level Select")
+        {
+            FindObjectOfType<AudioManager>().Play("Level Select");
+        }
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene(1);
+        FindObjectOfType<AudioManager>().Play("Click");
     }
 
     public void QuitGame()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
+
         Application.Quit();
     }
 
@@ -35,10 +42,13 @@ public class MainMenuScript : MonoBehaviour
     public void OpenLevelPanel()
     {
         SceneManager.LoadScene(1);
+        FindObjectOfType<AudioManager>().Play("Click");
     }
 
     public void LoadLevel(int num)
     {
+        FindObjectOfType<AudioManager>().Play("Click");
+
         SceneManager.LoadScene(num);
     }
 }

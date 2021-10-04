@@ -7,7 +7,8 @@ public class Celing : MonoBehaviour
 {
     Transform[] spawnPoints;
     
-    public GameObject celing;
+
+    public GameObject[] ceiling;
     bool spawned = false;
     // Start is called before the first frame update
     void Start()
@@ -35,9 +36,12 @@ public class Celing : MonoBehaviour
                 listNumbers.Add(number);
                 shuffledList.Add(spawnPoints[number]);
             }
-            foreach (Transform points in shuffledList)
+            FindObjectOfType<AudioManager>().Play("Ceiling Break");
+            int j = 0;
+            foreach (Transform points in spawnPoints)
             {
-                Instantiate(celing, points);
+                Instantiate(ceiling[j], points);
+                j += 1;
 
             }
             spawned = true;
