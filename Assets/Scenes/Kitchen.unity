@@ -1246,7 +1246,7 @@ MonoBehaviour:
   - {fileID: 139909463}
   - {fileID: 1589725208}
   - {fileID: 921427478}
-  stage: Kitchen
+  stage: LivingRoom
   endTime: 7
   mScript: {fileID: 500741251}
 --- !u!1 &516713811
@@ -3943,7 +3943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1386424814341264095, guid: c5e1bb9ec5413b441b4fc8b6ebbafe06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 80
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 1386424814341264095, guid: c5e1bb9ec5413b441b4fc8b6ebbafe06, type: 3}
       propertyPath: m_LocalPosition.z

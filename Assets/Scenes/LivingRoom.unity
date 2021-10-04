@@ -2474,7 +2474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1386424814341264095, guid: c5e1bb9ec5413b441b4fc8b6ebbafe06, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.22
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 1386424814341264095, guid: c5e1bb9ec5413b441b4fc8b6ebbafe06, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2828,6 +2828,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1448502460487472182, guid: 5b87c41ba9387e1499df092714a3f185, type: 3}
   m_PrefabInstance: {fileID: 1509948506}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1636337584
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3646955219321881188, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.359856
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.969248
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.782642
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646955219321881190, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14962fc1b2d043141b9d007ef225e539, type: 3}
 --- !u!1 &1702913847
 GameObject:
   m_ObjectHideFlags: 0
@@ -3038,7 +3095,7 @@ MonoBehaviour:
   - {fileID: 500767224}
   - {fileID: 331519017}
   - {fileID: 944250172}
-  stage: LivingRoom
+  stage: MudRoom
   endTime: 7
   mScript: {fileID: 1710473634}
 --- !u!1 &1917827472

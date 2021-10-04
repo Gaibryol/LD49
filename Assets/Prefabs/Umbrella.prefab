@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3118941181165341847}
   - component: {fileID: 3118941181165341846}
   - component: {fileID: 8558349717515384138}
-  - component: {fileID: -645501622878200416}
   - component: {fileID: -9143431207022988142}
   m_Layer: 0
   m_Name: Umbrella
@@ -235,27 +234,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mass: 0
-  rigidity: 0
+  rigidity: 50
   current_stress: 0
   adj: []
   parent: []
---- !u!114 &-645501622878200416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3118941181165341842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mass: 0
-  rigidity: 0
-  current_stress: 0
-  adj: []
-  parent: []
+  canBeDestroyed: 0
 --- !u!114 &-9143431207022988142
 MonoBehaviour:
   m_ObjectHideFlags: 0

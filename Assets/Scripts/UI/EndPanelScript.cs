@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndPanelScript : MonoBehaviour
 {
@@ -62,9 +63,9 @@ public class EndPanelScript : MonoBehaviour
             stars[i].SetActive(true);
         }
 
-        if (num > PlayerPrefs.GetInt((stage + "Stars").ToLower()))
+        if (num > PlayerPrefs.GetInt((SceneManager.GetActiveScene().name + "Stars").ToLower()))
         {
-            PlayerPrefs.SetInt((stage + "Stars").ToLower(), num);
+            PlayerPrefs.SetInt((SceneManager.GetActiveScene().name + "Stars").ToLower(), num);
         }
 
         if (num > 0)

@@ -122,3 +122,9 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Star
+    clip: {fileID: 8300000, guid: f9c23a61749967f44b435af27fcf854e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

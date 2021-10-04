@@ -52,12 +52,12 @@ public class EarthquakeScript : MonoBehaviour
         if (shaking)
         {
             // Timing for easy shaking
-            if (timer > 12f && timer <= shakeTimer)
+            if (timer > 10f && timer <= shakeTimer)
             {
                 rbody.position = new Vector2(transform.position.x + Random.Range(-shakeFactorEasy, shakeFactorEasy), transform.position.y + Random.Range(-shakeFactorEasy, shakeFactorEasy));
             }
             // If hit this point, player earned 1 star and bump it up to medium
-            else if (timer > 7f && timer <= 12f)
+            else if (timer > 5f && timer <= 10f)
             {
                 numStars = 1;
                 rbody.position = new Vector2(transform.position.x + Random.Range(-shakeFactorMedium, shakeFactorMedium), transform.position.y + Random.Range(-shakeFactorMedium, shakeFactorMedium));
