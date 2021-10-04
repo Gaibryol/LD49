@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Graph
   - Celing
+  - Clock
   layers:
   - Default
   - TransparentFX

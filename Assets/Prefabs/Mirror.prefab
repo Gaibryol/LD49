@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1307180200654281450}
   - component: {fileID: 1307180200654281451}
   - component: {fileID: 5740366266440295223}
-  - component: {fileID: -8180411898424367119}
   - component: {fileID: -6197418122807306668}
   m_Layer: 0
   m_Name: Mirror
@@ -422,23 +421,6 @@ PolygonCollider2D:
       - {x: 1.49, y: -3.9299998}
       - {x: 1.1, y: -3.9299998}
 --- !u!114 &5740366266440295223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307180200654281455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ce6b7761a75cc0409765a7fbbd06790, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mass: 0
-  rigidity: 0
-  current_stress: 0
-  adj: []
-  parent: []
---- !u!114 &-8180411898424367119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

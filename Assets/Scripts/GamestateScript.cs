@@ -7,11 +7,13 @@ public class GamestateScript : MonoBehaviour
 {
     public Button playButton;
     public static bool inGame;
+    public Animator ClockAnim;
 
     // Start is called before the first frame update
     void Start()
     {
         inGame = false;
+        ClockAnim = GameObject.FindGameObjectWithTag("Clock").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,5 +27,6 @@ public class GamestateScript : MonoBehaviour
     {
         playButton.interactable = false;
         inGame = true;
+        ClockAnim.SetBool("Clock Start", true);
     }
 }
