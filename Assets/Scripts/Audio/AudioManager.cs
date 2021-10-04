@@ -42,16 +42,39 @@ public class AudioManager : MonoBehaviour
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
-        s.source.Play();
+        if (s.isMusic)
+        {
+            s.source.Play();
+
+        }
+        if (s.isMusic && PlayerPrefs.HasKey("Music") && PlayerPrefs.GetInt("Music") == -1)
+        {
+            s.source.mute = true;
+        } else if (s.isSFX && PlayerPrefs.HasKey("SFX") && PlayerPrefs.GetInt("SFX") == 1)
+        {
+            s.source.Play();
+        }
     }
 
     public void Stop(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
-        s.source.Stop();
         if (s == null)
         {
             return;
         }
+        s.source.Stop();
+
+    }
+
+    public void Mute(string name, bool mute)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        
+        if (s == null)
+        {
+            return;
+        }
+        s.source.mute = mute;
     }
 }

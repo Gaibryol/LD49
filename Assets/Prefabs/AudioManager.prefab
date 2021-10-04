@@ -44,87 +44,155 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Earthquake
+  - isSFX: 1
+    isMusic: 0
+    name: Earthquake
     clip: {fileID: 8300000, guid: be9250f1e9ec7f84fad7c7025e13934c, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Click
+  - isSFX: 1
+    isMusic: 0
+    name: Click
     clip: {fileID: 8300000, guid: f499cc40266171b40ac9ef6744037b17, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Fail
+  - isSFX: 1
+    isMusic: 0
+    name: Fail
     clip: {fileID: 8300000, guid: 80bf1b0b2cd8ac146a40ad8c44c22dd3, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Hit
+  - isSFX: 1
+    isMusic: 0
+    name: Hit
     clip: {fileID: 8300000, guid: d571d42351c7b914bbaf4df7a0a0a826, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Impact 1
+  - isSFX: 1
+    isMusic: 0
+    name: Impact 1
     clip: {fileID: 8300000, guid: 04769eb0959f59f459b3f2e94b27eaac, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Impact 2
+  - isSFX: 1
+    isMusic: 0
+    name: Impact 2
     clip: {fileID: 8300000, guid: 88782c8c44981cb409fc08bdfd3e04b9, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Impact 3
+  - isSFX: 1
+    isMusic: 0
+    name: Impact 3
     clip: {fileID: 8300000, guid: 93a836a4b9c69764795cf78f825dbbd5, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Impact 4
+  - isSFX: 1
+    isMusic: 0
+    name: Impact 4
     clip: {fileID: 8300000, guid: 6066df6e2051f304d9ae4bc12352a7c9, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Impact 5
+  - isSFX: 1
+    isMusic: 0
+    name: Impact 5
     clip: {fileID: 8300000, guid: 0c154466818f5584586f5e70c5a5abc4, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Impact 6
+  - isSFX: 1
+    isMusic: 0
+    name: Impact 6
     clip: {fileID: 8300000, guid: 784d1393f6ec83747affcb06f826463f, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Break
+  - isSFX: 1
+    isMusic: 0
+    name: Break
     clip: {fileID: 8300000, guid: 94819d2cf6ccae141ad16d455aa3bd65, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Lift
+  - isSFX: 1
+    isMusic: 0
+    name: Lift
     clip: {fileID: 8300000, guid: 3045769cd217ca44fbabf1b850bf85b8, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Ceiling Break
+  - isSFX: 1
+    isMusic: 0
+    name: Ceiling Break
     clip: {fileID: 8300000, guid: 27beff7179df8914799faf926eee5507, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Star
+  - isSFX: 1
+    isMusic: 0
+    name: Star
     clip: {fileID: 8300000, guid: f9c23a61749967f44b435af27fcf854e, type: 3}
     volume: 1
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - isSFX: 0
+    isMusic: 1
+    name: Bedroom
+    clip: {fileID: 8300000, guid: a6163769d68b2e74d8bcb06828de20ef, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - isSFX: 0
+    isMusic: 1
+    name: Office
+    clip: {fileID: 8300000, guid: 83cc9c4b8e1ccd44fb0462cfbb452090, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - isSFX: 0
+    isMusic: 1
+    name: Kitchen
+    clip: {fileID: 8300000, guid: 83cc9c4b8e1ccd44fb0462cfbb452090, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - isSFX: 0
+    isMusic: 1
+    name: LivingRoom
+    clip: {fileID: 8300000, guid: 83cc9c4b8e1ccd44fb0462cfbb452090, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - isSFX: 0
+    isMusic: 1
+    name: MudRoom
+    clip: {fileID: 8300000, guid: 83cc9c4b8e1ccd44fb0462cfbb452090, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}

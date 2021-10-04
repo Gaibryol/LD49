@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GamestateScript : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class GamestateScript : MonoBehaviour
     {
         inGame = false;
         ClockAnim = GameObject.FindGameObjectWithTag("Clock").GetComponent<Animator>();
+        FindObjectOfType<AudioManager>().Play(SceneManager.GetActiveScene().name);
+
     }
 
     // Update is called once per frame

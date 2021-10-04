@@ -968,13 +968,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Menu
+  - isSFX: 0
+    isMusic: 1
+    name: Menu
     clip: {fileID: 8300000, guid: 31532f8c736ea36418f5c2a0c1bc9e17, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: Click
+  - isSFX: 1
+    isMusic: 0
+    name: Click
     clip: {fileID: 8300000, guid: f499cc40266171b40ac9ef6744037b17, type: 3}
     volume: 1
     pitch: 1
