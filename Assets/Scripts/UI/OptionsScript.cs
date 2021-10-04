@@ -11,6 +11,8 @@ public class OptionsScript : MonoBehaviour
 
     public Sprite soundOff;
     public Sprite musicOff;
+    public Sprite soundOn;
+    public Sprite musicOn;
 
     // Start is called before the first frame update
     void Start()
@@ -28,12 +30,27 @@ public class OptionsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PlayerPrefs.GetInt("SFX") == -1)
+        {
+            soundButton.GetComponent<Image>().sprite = soundOff;
+        }
+        else
+        {
+            soundButton.GetComponent<Image>().sprite = soundOn;
+        }
 
+        if (PlayerPrefs.GetInt("Music") == -1)
+        {
+            musicButton.GetComponent<Image>().sprite = musicOff;
+        }
+        else
+        {
+            musicButton.GetComponent<Image>().sprite = musicOn;
+        }
     }
 
     public void SwitchSound()
     {
-        soundButton.GetComponent<Image>().sprite = soundOff;
         PlayerPrefs.SetInt("SFX", -1 * PlayerPrefs.GetInt("SFX"));
         if (PlayerPrefs.GetInt("SFX") == -1)
         {
@@ -46,7 +63,6 @@ public class OptionsScript : MonoBehaviour
 
     public void SwitchMusic()
     {
-        musicButton.GetComponent<Image>().sprite = musicOff;
         PlayerPrefs.SetInt("Music", -1 * PlayerPrefs.GetInt("Music"));
         if (PlayerPrefs.GetInt("Music") == -1)
         {
