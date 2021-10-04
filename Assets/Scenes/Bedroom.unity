@@ -1007,6 +1007,7 @@ GameObject:
   - component: {fileID: 580242877}
   - component: {fileID: 580242879}
   - component: {fileID: 580242878}
+  - component: {fileID: 580242880}
   m_Layer: 5
   m_Name: End Panel
   m_TagString: Untagged
@@ -1078,6 +1079,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580242876}
   m_CullTransparentMesh: 1
+--- !u!225 &580242880
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580242876}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &585708361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1417,7 +1430,9 @@ MonoBehaviour:
   - {fileID: 386737580}
   - {fileID: 1092376289}
   - {fileID: 1922575030}
-  stage: 
+  stage: Bedroom
+  endTime: 7
+  mScript: {fileID: 667051160}
 --- !u!1 &688658417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,7 +2949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ca0c370b2e1ff4e9ebb285813f5848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 2
+  time: 3
 --- !u!225 &1580901171
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3412,7 +3427,7 @@ MonoBehaviour:
   shakeFactorMedium: 0.05
   shakeFactorHard: 0.07
   numStars: 0
-  eScript: {fileID: 0}
+  eScript: {fileID: 667051164}
 --- !u!1 &1974665090 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2623103067609256140, guid: 5a31cf320ae2c8344950888e172028c5, type: 3}

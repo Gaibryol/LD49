@@ -10,21 +10,52 @@ public class EndPanelScript : MonoBehaviour
 
     public string stage;
 
+    public float endTime;
+    private float timer;
+
+    private bool ended;
+
+    private float fadeTime;
+    private float fadeTimer;
+
+    public MainMenuScript mScript;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        ended = false;
+        fadeTime = 2f;
+        fadeTimer = fadeTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
+        }
+        if (timer <= 0 && ended)
+        {
+            mScript.MainMenu();
+        }
+
+        if (ended)
+        {
+            if (fadeTimer < 0)
+            {
+                panel.GetComponent<CanvasGroup>().alpha = 1;
+                return;
+            }
+            panel.GetComponent<CanvasGroup>().alpha = 1 - (fadeTimer / fadeTime);
+            fadeTimer -= Time.deltaTime;
+        }
     }
 
     public void ShowStars(int num)
     {
         panel.SetActive(true);
+        ended = true;
 
         for (int i = 0; i < num; i++)
         {
@@ -40,5 +71,7 @@ public class EndPanelScript : MonoBehaviour
         {
             PlayerPrefs.SetInt((stage + "Unlock").ToLower(), 1);
         }
+
+        timer = endTime;
     }
 }

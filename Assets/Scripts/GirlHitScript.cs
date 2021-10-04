@@ -24,7 +24,7 @@ public class GirlHitScript : MonoBehaviour
         {
             float kinEnergy = KineticEnergy(collision);
 
-            if (kinEnergy >= 20f)
+            if (kinEnergy >= 20f && GamestateScript.inGame)
             {
                 Debug.Log("Hit by: " + collision.gameObject + " w/ " + kinEnergy + "J");
                 FindObjectOfType<AudioManager>().Play("Hit");
